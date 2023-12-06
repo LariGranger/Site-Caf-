@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <p id="slogan">Máquinas de café e sachês para todos os gostos!</p>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicial</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="maquinas.html">Máquinas</a></li>
+                <li><a href="saches.html">Saches</a></li>
+                <li><a href="#">Compras</a></li>
+            </ul>
+        </nav>
+
+   
+           <form name="Dados de Agendamento" id="form_principal">
+        <fieldset>
+            <legend>Dados de Agendamento</legend>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome" placeholder="Nome Completo" autofocus>
+
+                <label for="cpf">CPF:</label>
+                <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"/>
+
+                <label for="celular">Celular:</label>
+                <input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="email" placeholder="user@email.com">
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco">
+            </fieldset>
+           </form>
+  
+            <form name="Produtos">
+                <fieldset>
+                    <legend>Produtos</legend>
+                    <label for="maquinas">Máquinas:</label>
+                <select name="maquinas" id="maquinas">
+                    <option>Selecione</option>
+                    <optgroup label="Dolce Gusto">
+                        <option value="piccolo">Picollo</option>
+                    </optgroup>
+                    <optgroup label="Nespresso">
+                        <option value="inissiaC40">Inissia C40</option>
+                        <option value="uC50">UC50</option>
+                    </optgroup>
+                    <optgroup label="Senseo">
+                        <option value="HD7811/96">HD7811/96</option>
+                    </optgroup>
+                </select>
+                <label for="saches">Saches:</label>
+                <select name="saches" id="saches">
+                    <option>Selecione</option>
+                    <optgroup label="Dolce Gusto">
+                        <option value="expresso">Expresso</option>
+                        <option value="descafeinado">Descafeinado</option>
+                    </optgroup>
+                    <optgroup label="Nespresso">
+                        <option value="livanto">Livanto</option>
+                        <option value="ristretto">Ristretto</option>
+                        <option value="vanilio">Vanilio</option>
+                    </optgroup>
+                    <optgroup label="Senseo">
+                        <option value="classico">Clássico</option>
+                        <option value="intenso">Intenso</n</option>
+                    </optgroup>
+                </select>
+                <label for="selecionados">Selecionados:</label>
+                <input type="reset" name="btn_remover" id="btn_remover" value="remover">
+                <textarea name="msg" id="msg"></textarea>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor">
+                </fieldset>
+           </form>
+
+           <form action="" name="Forma de Pagamento">
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <fieldset class="pag">
+                <input type="radio" id="cartao" name="form_pagamento" value="cartao"><label for="cartao">Cartão</label>
+                <input type="radio" id="cheque" name="form_pagamento" value="cheque"><label for="cheque">Cheque</label>
+                <input type="radio" id="dinheiro" name="form_pagamento" value="dinheiro"><label for="dinheiro">Dinheiro</label>
+            </fieldset>
+            <form action="" name="Dados do cartão">
+                <fieldset id="dados">
+                    <legend>Dados do Cartão</legend>
+                    <fieldset>
+                    <input type="radio" id="visa" name="dados_cartao"><label for="visa"><img src="./img/visa.png" alt=""></label>
+
+                    <input type="radio" id="master" name="dados_cartao"><label for="master"><img src="./img/master.png" alt=""></label>
+
+                    <input type="radio" id="amex" name="dados_cartao"><label for="amex"><img src="./img/amex.png" alt=""></label>
+                </fieldset>
+                <label for="validade">Validade:</label>
+                <input type="date" name="validade" id="validade">
+                <label for="numero_cartao">Numero:</label>
+                <input type="number" id="numero_cartao">
+                </fieldset>
+                
+            </form>
+           </form>
+            </fieldset>
+            
+    </div>
+    <div class="container2">
+    
+        <input type="submit" name="btn_enviar" value="Enviar">
+        <input type="reset" name="btn_limpar" value="Limpar">
+    </div>
+    <script src="./js/compras.js" type="module"></script>
+</body>
+</html>

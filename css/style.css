@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #320000; 
+    font-family: 'Playfair Display', serif;
+}
+
+/*FLEXBOX*/
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*PG-INICIAL*/
+#slogan{
+    background-color: #e0ce9c;
+    color: #320000;
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    margin-bottom: 90px;
+}
+
+/*IMAGEM*/
+#bloco img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+#bloco img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*NAVEGAÇÃO*/
+nav a{
+    text-decoration: none;
+    color: #e0ce9c;
+    font-size: 30px;
+}
+nav li{
+    list-style: none;
+}
+
+#contato p{
+    font-size: 20px;
+    color: #e0ce9c;
+    margin-bottom: 30px;
+}
+
+/*PG-HISTORIA*/
+h1{
+    color: #ffb48a;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.historia{
+    color: blanchedalmond;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+#pag-historia{
+    width: 45%;
+}
+/*PG-MAQUINAS*/
+#pag-maquinas #slogan{
+    margin-bottom: 60px;
+}
+td{
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+
+}
+td img{
+    width: 80%;
+}
+tr #titulo{
+    font-size: 30px;
+    color: #ffb48a;
+}
+/*PG-SACHES*/
+#pag-saches{
+    color: #ffffff;
+    font-size: 25px;
+    
+}
+#pag-saches h2{
+    color: #ffb48a;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+#pag-saches .sache{
+    margin-left: 30px;
+    font-size: 20px;
+}
+#pag-saches ul{
+    margin-bottom: 15px;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linkMaquinas:link{
+    color: #573218;
+    text-decoration: none;
+}
+.linkMaquinas:visited{
+    color: #662222;
+    text-decoration: none;
+}
+
+/*PAG-COMPRAS*/
+
+form {
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+}
+fieldset fieldset{
+    border: none;
+}
+
+input, select, fieldset, textarea, .dados{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /*tamanho da caixa limitado a largura da caixa*/
+    font: 1.1em ;
+    font-weight: 300;
+    color: #320000;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    /*border: none;*/
+}
+
+label, legend{
+    font: 1em 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #e0ce9c;
+}
+input[type="radio"]{
+    width: 30px;
+}
+input[type="submit"], input[type="reset"]{
+    border: none;
+    background-color: #1d3008;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 80px;
+}
+
+input[type="reset"]{
+    background-color: #df1a1a;
+    margin-left: 10px;
+}
+.container2{
+    text-align: center;
+}
+

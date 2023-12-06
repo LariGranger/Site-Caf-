@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquinas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div id="pag-maquinas">
+        <p id="slogan">Máquinas de café e sachês para todos os gostos!</p>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menu">Inicial</a></li>
+                <li><a href="historia.html" class="menu">História</a></li>
+                <li><a href="#" class="menu">Máquinas</a></li>
+                <li><a href="saches.html" class="menu">Saches</a></li>
+                <li><a href="compras.html" class="menu">Compras</a></li>
+            </ul>
+        </nav>
+        <header id="table">
+            <table border="1">
+                <tr>
+                    <td id="titulo" colspan="4">Máquinas de Café</td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td>Modelo</td>
+                    <td>Foto</td>
+                    <td>Preço</td>
+                </tr>
+                <tr>
+                    <td>Dolce Gusto</td>
+                    <td><a onclick="maqPiccolo()" href="#" class="linkMaquinas" >Piccolo</a></td>
+                    <td rowspan="4" class="imgMaq"></td>
+                    <td rowspan="4" class="preco-maq"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Nespresso</td>
+                    <td><a class="linkMaquinas" onclick="maqInissia()" href="#" >Inissia C40</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="linkMaquinas" onclick="maqUC()">UC50</a></td>
+                </tr>
+                <tr>
+                    <td>Senseo</td>
+                    <td> <a href="#" onclick="maqHD()" class="linkMaquinas" >HD7811/96</a> </td>
+                </tr>
+            </table>
+        </header>
+    </div>
+</body>
+</html>
