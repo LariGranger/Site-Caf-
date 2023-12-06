@@ -33,7 +33,7 @@ function abreNovaJanelaDG()
         `width=${largura},height=${altura},left=${largura},top=50`
     );
 
-    janela.document.write("<html><head><title>Capsula</title><link rel='stylesheet' type='text/css' href='style.css'></head>");
+    janela.document.write("<html><head><title>Capsula</title><style>body{color: #fff; text-align: center;} img{width: 70%; margin: 50px 0 50px;}button{margin-top: 50px}</style><link rel='stylesheet' type='text/css' href='./css/style.css'></head>");
 
     janela.document.write('<body> <h1>Dolce Gusto</h1> <h2>Caixa 16 capsulas</h2> <img src="./img/CapsulaDulceGusto.jpg"></img>');
 
@@ -53,7 +53,7 @@ function abreNovaJanelaSE()
         `width=${largura},height=${altura},left=${largura},top=50`
     );
 
-    janela.document.write("<html><head><title>Capsula</title><link rel='stylesheet' type='text/css' href='style.css'></head>");
+    janela.document.write("<html><head><title>Capsula</title><style>body{color: #fff; text-align: center;} img{width: 70%; margin: 50px 0 50px;}button{margin-top: 50px}</style><link rel='stylesheet' type='text/css' href='./css/style.css'></head>");
 
     janela.document.write('<body> <h1>Senseo</h1> <h2>Caixa 18 sachês</h2> <img src="./img/Senseo_Classico.jpg"></img>');
 
@@ -73,7 +73,7 @@ function abreNovaJanelaNE()
         `width=${largura},height=${altura},left=${largura},top=50`
     );
 
-    janela.document.write("<html><head><title>Capsula</title><link rel='stylesheet' type='text/css' href='style.css'></head>");
+    janela.document.write("<html><head><title>Capsula</title><style>body{color: #fff; text-align: center;} img{width: 70%; margin: 50px 0 50px;}button{margin-top: 50px}</style><link rel='stylesheet' type='text/css' href='./css/style.css'></head>");
 
     janela.document.write('<body> <h1>Nespresso</h1> <h2>Caixa 20 capsulas</h2> <img src="./img/NespressoLivanto.png"></img>');
 
