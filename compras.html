@@ -25,19 +25,27 @@
         <fieldset>
             <legend>Dados de Agendamento</legend>
                 <label for="nome">Nome:</label>
-                <input id="nome" type="text" name="nome" placeholder="Nome Completo" autofocus>
+                <input id="nome" type="text" name="nome" form="nome" placeholder="Nome Completo" autofocus>
+                <span class="mensagem-erro"></span>
 
-                <label for="cpf">CPF:</label>
-                <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"/>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" type="text" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"/>
+                    <span class="mensagem-erro"></span>
+                </div>
+                
 
                 <label for="celular">Celular:</label>
                 <input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+                <span class="mensagem-erro"></span>
 
                 <label for="email">E-mail:</label>
                 <input id="email" type="email" name="email" placeholder="user@email.com">
+                <span class="mensagem-erro"></span>
 
                 <label for="endereco">Endereço:</label>
                 <input type="text" id="endereco">
+                <span class="mensagem-erro"></span>
             </fieldset>
            </form>
   

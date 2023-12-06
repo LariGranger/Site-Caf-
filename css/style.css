@@ -162,3 +162,7 @@ input[type="reset"]{
     text-align: center;
 }
 
+.mensagem-erro{
+    color: #fff;
+}
+

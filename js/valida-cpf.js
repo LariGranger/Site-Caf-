@@ -1,17 +1,15 @@
 export default function ehUmCPF(campo) {
     const cpf = campo.value.replace(/\.|-/g, "");
-    if(validaPrimeiroDigito(cpf) || validaSegundoDigito(cpf) || validaTamanhoCPF(cpf)){
-        console.log("CPF não existe")
-    }else{
-        console.log("Existe!")
+    if(validaPrimeiroDigito(cpf) || validaSegundoDigito(cpf)){
+        campo.setCustomValidity('Esse CPF não é válido!');
     }
 }
 
-function validaTamanhoCPF(cpf){
+/*function validaTamanhoCPF(cpf){
     if(cpf.length < 11 || cpf.length >14){
         return false
     }
-}
+}*/
 
 
 function validaPrimeiroDigito(cpf){
